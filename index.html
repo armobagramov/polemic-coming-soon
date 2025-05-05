@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <title>Coming Soon</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
       background: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
     }
     img {
-      max-width: 90%;
-      max-height: 90%;
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* обрезает края, но без искажений */
     }
   </style>
 </head>
@@ -22,5 +23,3 @@
   <img src="comingsoon.png" alt="Coming Soon">
 </body>
 </html>
-
-
